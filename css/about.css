@@ -1,0 +1,313 @@
+.header .headerContent{
+    background-image: url(/images/Picture10.jpg);
+}
+
+.whoWeAre{
+    padding: 6.944vw 16.111vw;
+    background: rgba(243, 204, 204, 0.5);
+    width: 100vw;
+    text-align: center;
+}
+
+.whoWeAre p:nth-of-type(1){
+    margin-bottom: 2.778vw;
+}
+
+.whatWeDo1{
+    padding: 6.944vw;
+
+}
+
+#whatWeDo1Title{
+    margin-bottom: 4.780vw;
+    text-align: center;
+}
+
+.sectionLine{
+    display: none;
+}
+
+.whatWeDo1 .whatWeDo1Details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.whatWeDo1 .whatWeDo1Details div{
+    display: flex;
+    flex-direction: column;
+    width: 19.375vw;
+}
+
+.whatWeDo1 .whatWeDo1Details div img{
+    height: 5.556vw;
+    width: 5.556vw;
+    margin-bottom: 2.778vw;
+    border-radius: 50%;
+}
+
+.whatWeDo1 .whatWeDo1Details div p:nth-of-type(1){
+    font-size: 1.667vw;
+    line-height: 1.875vw;
+    color: #303030;
+}
+
+.whatWeDo1 .whatWeDo1Details .whatWeDo1DetailsSpecial{
+    width: 21.597vw;
+}
+
+.whatWeDo2{
+    background-color: #FAFAFA;
+    padding: 4.583vw 12.847vw 7.083vw 6.94vw;
+    width: 100vw;
+    margin-bottom: 2.431vw;
+}
+
+#whatWeDo2Title{
+    margin-bottom: 2.778vw;
+    position: relative;
+    top: 7.917vw;
+}
+
+.whatWeDo2 .whatWeDoContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.whatWeDo2 .whatWeDoContent .whatWeDo2WriteUp{
+    margin-top: 7.917vw;
+    width: 32.638vw;
+}
+
+.whatWeDo2 .whatWeDoContent .whatWeDo2Images{
+    display: grid;
+    width: 36.597vw;
+    grid-template-columns: auto auto;
+    column-gap: 1.736vw;
+    row-gap: 1.736vw;
+}
+
+.whatWeDo2 .whatWeDoContent .whatWeDo2Images img{
+    width: 17.431vw;
+    height: 17.431vw;
+    border-radius: 0.417vw;
+}
+
+.whatWeDo2 .whatWeDoContent .whatWeDo2Images img:nth-of-type(1){
+    position: relative; top: 2.431vw;
+}
+
+.whatWeDo2 .whatWeDoContent .whatWeDo2Images img:nth-of-type(3){
+    position: relative; top: 2.431vw;
+}
+
+.team{
+    width: 100vw;
+     padding: 6.0944vw 13.681vw;
+     margin-bottom: 5.556vw;
+}
+
+#teamTitle{
+    text-align: center;
+    margin-bottom: 3.733vw;
+}
+
+.team .profileDetailsContainer{
+    margin-top: 5.556vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .profileDetailsContainer .profileDetails{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 17.083vw;
+}
+
+.team .profileDetailsContainer .profileDetails img{
+    width: 13.889vw;   
+    height: 13.889vw;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1.389vw;
+}
+
+.team .profileDetailsContainer .profileDetails p:nth-of-type(1){
+    font-size: 1.667vw;
+    line-height: 2.083vw;
+    margin-bottom: 0.694vw;
+}
+
+#hireUsToday{
+    text-align:center;
+    padding-top: 2.917vw
+}
+
+.contactUsBtn{
+    margin: auto;
+    display: block;
+    width: 17.569vw;
+    margin-top: 2.917vw;
+    margin-bottom: 19vw;
+    text-align: center;
+}
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 600px) {
+    .header .headerContent{
+        background-image: url(/images/Picture10b.jpg);
+    }
+
+    .whoWeAre{
+        margin-top: 12vw;
+        margin-bottom: 23.733vw;
+        padding: 14.267vw 5.6vw;
+    }
+
+    .whoWeAre p:nth-of-type(1){
+        margin-bottom: 8vw;
+        line-height: 7.2vw;
+    }
+
+    .whoWeAre p:nth-of-type(2){
+        line-height: 6.667vw;
+    }
+
+    .sectionLine{
+        width: 35vw;
+        margin: auto;
+        margin-bottom: 12vw;
+        display: block;
+        border: none;
+        border-bottom: 0.1px solid;
+    }
+
+    #whatWeDo1Title{
+        margin-bottom: 4vw;
+    }
+
+    .whatWeDo1 .whatWeDo1Details{
+        flex-direction: column;
+        align-items:center;
+    }
+    
+    .whatWeDo1 .whatWeDo1Details div{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10.667vw;
+        text-align: center;
+    }
+    
+    .whatWeDo1 .whatWeDo1Details div img{
+        height: 10.667vw;
+        width: 10.667vw;
+        margin-bottom: 6.4vw;
+    }
+    
+    .whatWeDo1 .whatWeDo1Details div p:nth-of-type(1){
+        font-size: 4.267vw;
+        line-height: 5.333vw;
+        color: black;
+        margin-bottom: 2.667vw;
+    }
+
+    .whatWeDo1 .whatWeDo1Details .whatWeDo1DetailsSpecial{
+        width: 100%;
+    }
+    
+    .whatWeDo2{
+        padding: 7.467vw 5.333vw 10.667vw;
+        margin-bottom: 13.333vw;
+        flex-direction: column;
+    }
+
+    #whatWeDo2Title{
+        margin-bottom: 10.933vw;
+        top: 0;
+    }
+
+    .whatWeDo2 .whatWeDoContent{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10.667vw;
+    }
+    
+    .whatWeDo2 .whatWeDoContent .whatWeDo2WriteUp{
+        margin-top: 16vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .whatWeDo2 .whatWeDoContent .whatWeDo2WriteUp p{
+        line-height: 8vw;
+    }
+    
+    .whatWeDo2 .whatWeDoContent .whatWeDo2Images{
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+        row-gap: 4vw;
+        column-gap: 4vw;
+    }
+    
+    .whatWeDo2 .whatWeDoContent .whatWeDo2Images img{
+        width: 42.667vw;
+        height: 42.667vw;
+        border-radius: 1.6vw;
+    }
+
+    .whatWeDo2 .whatWeDoContent .whatWeDo2Images img:nth-of-type(1){
+        top: 5.6vw;
+    }
+
+    .whatWeDo2 .whatWeDoContent .whatWeDo2Images img:nth-of-type(3){
+        top: 5.6vw;
+    }
+
+    .team{
+        margin-bottom: 6.4vw;
+    }
+
+    #teamTitle{
+        margin-bottom: 4vw;
+    }
+
+    .team .profileDetailsContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team .profileDetailsContainer .profileDetails{
+        width: 100%;
+        margin-bottom: 10.667vw;
+    }
+    
+    .team .profileDetailsContainer .profileDetails img{
+        width: 32vw;   
+        height: 32vw;
+        margin-bottom: 2.933vw;
+    }
+    
+    .team .profileDetailsContainer .profileDetails p:nth-of-type(1){
+        font-size: 4.267vw;
+        line-height: 8vw;
+        margin-bottom: 1.333vw;
+    }
+
+    #hireUsToday{
+        margin-top: 33.333vw;
+        font-size: 8vw;
+        line-height: 8.8vw;
+        margin-bottom: 11.067vw;
+    }
+
+    .contactUsBtn{
+        margin: auto;
+        display: block;
+        width: 38.667vw;
+        margin-top: 0;
+        margin-bottom: 50vw;
+    }
+}

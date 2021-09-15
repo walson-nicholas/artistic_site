@@ -1,0 +1,301 @@
+.indexHeader{
+    width: 100vw;
+    margin-top: 14.444vw;
+}
+
+.indexHeader .indexHeaderContent{
+    background-image: url(/images/Picture1.jpg);
+    margin-left: 12.5vw;
+    margin-right: 6.944vw;
+    padding-top: 6.527vw;
+    height: 50vw;
+    background-size: 83.017% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.indexHeader .indexHeaderContent p:nth-of-type(1){
+    font-weight: bold;
+    font-size: 6.25vw;
+    line-height: 8.333vw;
+    letter-spacing: 0.3em;
+    margin-left: 2.083vw;
+}
+
+.indexHeader .indexHeaderContent p:nth-of-type(1) span{
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 8.333vw;
+    letter-spacing: 0.3em;
+}
+
+.indexHeader .indexHeaderContent p:nth-of-type(1) .spanSpecial{
+    color: black;
+}
+
+.indexHeader .indexHeaderContent p:nth-of-type(2){
+    width: 41.041vw;
+    margin-left: 15.9722vw;
+    margin-top: 2.014vw;
+    color: #FFFFFF;
+}
+
+.indexHeader .indexHeaderContent div{
+    margin-left: 15.972vw;
+    margin-top: 2.569vw;
+}
+
+.valuesContainer{
+    margin-top: 6.666vw;
+    padding: 6.944vw 10.417vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.valuesContainer .values{
+    width: 19.444vw;
+    height: 14.791vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.valuesContainer .values img{
+    width: 5.555vw;
+    height: 5.555vw;
+}
+
+.valuesContainer .values p:nth-of-type(1){
+    margin-top: 2.777vw;
+}
+
+.valuesContainer .values p:nth-of-type(2){
+    margin-top: 1.389vw;
+    font-weight: 300;
+    font-size: 1.111vw;
+    line-height: 2.083vw;
+}
+
+#customerReviewTitle{
+    font-weight: bold;    
+    margin-top: 10vw;
+    text-align: center;
+}
+
+.customerReview{
+    display: flex;
+    margin-top: 5.208vw;
+    padding: 0 10.208vw 16.528vw 12.361vw;
+}
+
+.customerReview .reviewImages{
+    margin-right: 1.597vw;
+    position: relative;
+    width: 43.333vw;
+    height: 38.538vw;
+}
+
+.customerReview .reviewImages img{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.customerReview .reviewImages img:nth-last-of-type(1){
+    top: 0;
+    right: 0;
+    height: 22.5vw;
+    width: 22.778vw;
+    border: 0.347vw solid #F3CCCC;
+    padding: 2vw;
+}
+
+.customerReview .reviewImages img:nth-last-of-type(2){
+    top: 6.042vw;
+    left: 0;
+    height: 9.444vw;
+    width: 9.583vw;
+}
+
+.customerReview .reviewImages img:nth-last-of-type(3){
+    top: 23.538vw;
+    left: 11.944vw;
+    height: 5vw;
+    width: 5.069vw;
+}
+
+.customerReview .reviewImages img:nth-last-of-type(4){
+    top: 28.611vw;
+    left: 17.986vw;
+    height: 8.889vw;
+    width: 9.028vw;
+}
+
+.customerReview .reviewImages img:nth-last-of-type(5){
+    top: 29.722vw;
+    left: 0.555vw;
+    height: 8.264vw;
+    width: 8.403vw;
+}
+
+.customerReview .reviewWriteUp{
+    margin-top: 2.427vw;
+}
+
+.customerReview .reviewWriteUp p:nth-of-type(1){
+    font-size: 1.667vw;
+    line-height: 1.875vw;
+    margin-left: 1.528vw;
+    width: 31.8vw;
+}
+
+.customerReview .reviewWriteUp pre{
+    font-weight: 600;
+    font-size: 5.903vw;
+    line-height: 7.222vw;
+    width: 2vw;
+}
+
+.customerReview .reviewWriteUp p:nth-of-type(1){
+    position: relative;
+    top: -3vw;
+}
+
+.customerReview .reviewWriteUp pre:nth-of-type(2){
+    margin-left: 9.8611vw;
+    position: relative;
+    top: -2vw;
+}
+
+.customerReview .reviewWriteUp p:nth-of-type(2){
+    font-weight: bold;
+    font-size: 1.666vw;
+    line-height: 1.875vw;
+    color: #DA9D00;
+    position: relative;
+    top: -6vw;
+    margin-left: 1.25vw;
+}
+
+.customerReview .reviewWriteUp p:nth-of-type(3){
+    font-size: 1.25vw;
+    line-height: 1.389vw;
+    position: relative;
+    top: -5vw;
+    margin-left: 1.25vw;
+}
+
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 600px) {
+    .content{
+        padding: 0 5.333vw;
+    }
+
+    .indexHeader{
+        width: 100%;
+        margin-top: 19.733vw;
+    }
+    
+    .indexHeader .indexHeaderContent{
+        background-image: url(/images/Picture1b.jpg);
+        margin: 0;
+        padding-top: 13.333vw;
+        height: 116vw;
+        background-size: 88.358% 100%;
+    }
+    
+    .indexHeader .indexHeaderContent p:nth-of-type(1){
+        font-size: 10.666vw;
+        line-height: 14.667vw;
+        letter-spacing: 0.5em;
+        margin-left: 0;
+    }
+    
+    .indexHeader .indexHeaderContent p:nth-of-type(1) span{
+        letter-spacing: 0.5em;
+    }
+
+    .indexHeader .indexHeaderContent p:nth-of-type(1) .spanSpecial{
+        color: white;
+    }
+    
+    .indexHeader .indexHeaderContent p:nth-of-type(2){
+        width: 66.933vw;
+        margin-left: 15.733vw;
+        margin-top: 11.733vw;
+    }
+    
+    .indexHeader .indexHeaderContent div{
+        margin-left: 15.733vw;
+        margin-top: 10.667vw;
+    }
+
+    .displayRow .displayRowWriteUp{
+        margin-top: 7.569vw;
+    }
+    
+    .displayRow .displayRowWriteUp p:nth-of-type(1){
+        margin-bottom: 1.389vw;
+        position: relative;
+        bottom: 91vw;
+    }
+    
+    .displayRow .displayRowWriteUp p:nth-of-type(2){
+        width: 100%;
+        position: relative;
+        bottom: 9vw;
+        text-align: center;
+    }
+    
+    .displayRow .displayRowWriteUp a div{
+        margin-top: 2.778vw;
+        position: relative;
+        bottom: 6vw;
+    }
+
+    .displayRow2{
+        margin-bottom: 15vw;
+    }
+    
+    .valuesContainer{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        padding: 19.2vw 0 0;
+    }
+
+    .valuesContainer .values{
+        width: 57.867vw;
+        height: 38.4vw;
+        margin-bottom: 10.667vw;
+    }
+
+    .valuesContainer .values img{
+        width: 10.667vw;
+        height: 10.667vw;
+    }
+
+    .valuesContainer .values p:nth-of-type(1){
+        margin-top: 5.6vw;
+    }
+
+    .valuesContainer .values p:nth-of-type(2){
+        margin-top: 3.467vw;
+        font-size: 3.2vw;
+        line-height: 5.333vw;
+        font-weight: normal;
+        width: 57.867vw;        
+        text-align: center;
+    }
+    
+    #customerReviewTitle{
+        font-weight: normal;
+        width: 60vw;
+        margin: auto;
+        line-height: 8vw;
+    }
+    
+}
