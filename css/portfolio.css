@@ -1,5 +1,5 @@
 .headerContent{
-    background-image: url(../img/Picture3.jpg);
+    background-image: url(../Picture3.jpg);
 }
 
 .title3{
@@ -33,7 +33,7 @@
 
 @media only screen and (max-width: 600px)  {
     .headerContent{
-        background-image: url(../img/Picture3b.jpg);
+        background-image: url(../images/Picture3b.jpg);
     }
 
     .title3{

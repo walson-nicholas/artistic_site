@@ -1,5 +1,5 @@
 .header .headerContent{
-    background-image: url(../img/Picture14.jpg);
+    background-image: url(../images/Picture14.jpg);
 }
 
 .sucMsgAlert{
@@ -90,7 +90,7 @@
 
 @media only screen and (max-width: 600px) {
     .header .headerContent{
-        background-image: url(../img/Picture14b.jpg);
+        background-image: url(../images/Picture14b.jpg);
     }
 
     .sucMsgAlert{

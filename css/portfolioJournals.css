@@ -1,11 +1,11 @@
 .headerContent{
-    background-image: url(../img/Picture5b.jpg);
+    background-image: url(../images/Picture5b.jpg);
 }
 
 /* MOBILE VIEW */
 
 @media only screen and (max-width: 600px) {
     .headerContent{
-        background-image: url(../img/Picture5c.jpg);
+        background-image: url(../images/Picture5c.jpg);
     }
 }

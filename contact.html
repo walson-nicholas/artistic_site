@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>makArtistry</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/base.css">
     <link rel="stylesheet" type="text/css" href="/css/contact.css">
+    <script src="/js/base.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
 </head>
@@ -15,26 +17,26 @@
     <div class="topRow">
 
         <div id="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+            <div class="burgerLine line1"></div>
+            <div class="burgerLine line2"></div>
+            <div class="burgerLine line3"></div>
         </div>
 
         <img id="logo" src="/images/logo.PNG" alt="logo">
 
-        <ul class="navLinks">
-            <li> <a href="#">Home</a> </li>
+        <ul class="navLinks"  id="nav">
+            <li class="active"> <a href="#">Home</a> </li>
             <li> <a href="#">Shop</a> </li>
-            <li> <a href="#">Portfolio</a> </li>
+            <li> <a href="/portfolio.html">Portfolio</a> </li>
             <li> <a href="#">Blog</a> </li>
-            <li> <a href="#">About US</a> </li>
-            <li> <a href="#">Contact</a> </li>
+            <li> <a href="/about.html">About US</a> </li>
+            <li> <a href="/contact.html">Contact</a> </li>
         </ul>
 
         <div class="navIcons">
             <a href="#"><i class="fas fa-shopping-cart"></i></a>
 
-            <a href="#"><i class="fas fa-search"></i></a>
+            <a class="secondNavIcon" href="#"><i class="fas fa-search" id="searchIcon"></i></a>
         </div>
         
     </div>
@@ -92,38 +94,31 @@
 
     </div>
 
-    <div class="footer">
-        <div class="reachOut">
-            <p>Be the first to know !</p>
+    <div class="topRow">
 
-            <form action="">
-                <input type="email" placeholder="Email address">
-                <button type="button">SIGN UP</button>
-            </form>
-
-            <div class="reachOutLinks">
-                <a href="#"><i class="fab fa-instagram-square"></i></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-            </div>
-            
+        <div id="burger">
+            <div class="burgerLine line1"></div>
+            <div class="burgerLine line2"></div>
+            <div class="burgerLine line3"></div>
         </div>
 
-        <div class="footNav">
-            <a href="#">•  Shop</a>
-            <a href="#">•  About us</a>
-            <a href="#">•  Custom Orders</a>
-            <a href="#">•  Return policy</a>
-            <a href="#">•  Gallery</a>
-            <a href="#">•  Contact us</a>
-            <a href="#">•  Work with us</a>
-            <a href="#">•  Terms of service</a>
-            <a href="#">•  what we do</a>
-            <a href="#">•  FAQ’s</a>
-            <a href="#">•  Make enquires</a>
+        <img id="logo" src="/images/logo.PNG" alt="logo">
+
+        <ul class="navLinks"  id="nav">
+            <li class="active"> <a href="#">Home</a> </li>
+            <li> <a href="#">Shop</a> </li>
+            <li> <a href="/portfolio.html">Portfolio</a> </li>
+            <li> <a href="#">Blog</a> </li>
+            <li> <a href="/about.html">About US</a> </li>
+            <li> <a href="/contact.html">Contact</a> </li>
+        </ul>
+
+        <div class="navIcons">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+
+            <a class="secondNavIcon" href="#"><i class="fas fa-search" id="searchIcon"></i></a>
         </div>
+        
     </div>
 
 </body>

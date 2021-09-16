@@ -1,5 +1,5 @@
 .header .headerContent{
-    background-image: url(../img/Picture10.jpg);
+    background-image: url(../images/Picture10.jpg);
 }
 
 .whoWeAre{
@@ -199,7 +199,7 @@
 
 @media only screen and (max-width: 600px) {
     .header .headerContent{
-        background-image: url(../img/Picture10b.jpg);
+        background-image: url(../images/Picture10b.jpg);
     }
 
     .whoWeAre{
