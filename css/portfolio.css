@@ -1,3 +1,7 @@
+.headerContent{
+    background-image: url(../img/Picture3.jpg);
+}
+
 .title3{
     font-size: 2.083vw;
     line-height: 2.292vw;
@@ -25,13 +29,13 @@
     filter: drop-shadow(-1.528vw 1.944vw 1px #4F4229);
 }
 
-.headerContent{
-    background-image: url(/images/Picture3.jpg);
-}
-
 /* MOBILE VIEW */
 
 @media only screen and (max-width: 600px)  {
+    .headerContent{
+        background-image: url(../img/Picture3b.jpg);
+    }
+
     .title3{
         font-size: 4.8vw;
         line-height: 5.333vw;
@@ -70,10 +74,6 @@
     
     .bigImage4{
         filter: drop-shadow(3.115vw 4.048vw 1px #4F4229);
-    }
-
-    .headerContent{
-        background-image: url(/images/Picture3b.jpg);
     }
 
     #specialSpan{

@@ -16,6 +16,10 @@ a{
     color: initial;
 }
 
+.topRow .navLinks .active{
+    border-bottom: 0.138vw solid #303030;
+}
+
 .button{ 
     background: #F3CCCC;
     border-radius: 0.347vw;
@@ -103,24 +107,6 @@ a{
     border: 1px solid #C5C5C5;
 }
 
-.clients{
-    color: #FFFFFF;
-    text-align: center;
-    padding: 3.444vw 8.680vw;
-    background: #000000;
-    margin-bottom: 10vw;
-}
-
-.clients .clientIcons{
-    display: flex;
-    justify-content: space-between;
-    margin: 4.274vw 0;
-}
-
-.clients .clientIcons img{
-    height: 3.472vw;
-}
-
 .topRow{
     width: 100vw;
     height: 5.5vw;
@@ -174,7 +160,7 @@ a{
     display: flex;
     margin-bottom: 6.944vw;
     margin-top: 5.5vw;
-    background-image: url(/images/headerDeco.png);
+    background-image: url(../img/headerDeco.png);
     background-size: 6.389% 100%;
     background-repeat: no-repeat;
 }
@@ -358,16 +344,6 @@ a{
     .displayRow2{
         flex-direction: column;
     }
-
-    .clients{
-        padding: 4.8vw;
-        height: 43.733vw;
-    }
-
-    .clients p{
-        font-size: 4.8vw;
-        line-height: 5.333vw;
-    }
     
     .topRow{
         justify-content: space-between;
@@ -384,6 +360,30 @@ a{
     
     .topRow .navLinks{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        padding-top: 27.467vw;
+        padding-left: 10.667vw;
+        line-height: 0;
+    }
+
+    .topRow .navLinks .active{
+        border-bottom: none;
+    }
+
+    .topRow .navLinks li{
+        margin-bottom: 16vw;
+    }
+
+    .topRow .navLinks li a{
+        color: white;
+        font-size: 3.733vw;
+        letter-spacing: 0.07em;
     }
 
     .topRow .navIcons{
@@ -394,6 +394,10 @@ a{
         margin: 0 2.356vw;
         font-size: 3.556vw;
         color: rgba(0, 0, 0, 0.7);
+    }
+
+    .topRow .navIcons .secondNavIcon .whiteSearch{
+        color: white;
     }
 
     .topRow #burger{
@@ -410,6 +414,10 @@ a{
         border-radius: 2.666vw;
         height: 0.533vw;
         width: 5.333vw;
+    }
+
+    .topRow #burger .whiteBurger{
+        background: white;
     }
     
     .topRow #burger .line2{

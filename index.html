@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>makArtistry</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/base.css">
     <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <script src="/js/base.js"></script>
+    <script src="/js/index.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous">
-    </script>
-    <script> src="js/main.js"</script>
 </head>
 
 <body>
@@ -21,26 +18,26 @@
     <div class="topRow">
 
         <div id="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+            <div class="burgerLine line1"></div>
+            <div class="burgerLine line2"></div>
+            <div class="burgerLine line3"></div>
         </div>
 
         <img id="logo" src="/images/logo.PNG" alt="logo">
 
-        <ul class="navLinks">
-            <li> <a href="#">Home</a> </li>
+        <ul class="navLinks"  id="nav">
+            <li class="active"> <a href="#">Home</a> </li>
             <li> <a href="#">Shop</a> </li>
-            <li> <a href="#">Portfolio</a> </li>
+            <li> <a href="/portfolio.html">Portfolio</a> </li>
             <li> <a href="#">Blog</a> </li>
-            <li> <a href="#">About US</a> </li>
-            <li> <a href="#">Contact</a> </li>
+            <li> <a href="/about.html">About US</a> </li>
+            <li> <a href="/contact.html">Contact</a> </li>
         </ul>
 
         <div class="navIcons">
             <a href="#"><i class="fas fa-shopping-cart"></i></a>
 
-            <a href="#"><i class="fas fa-search"></i></a>
+            <a class="secondNavIcon" href="#"><i class="fas fa-search" id="searchIcon"></i></a>
         </div>
         
     </div>
@@ -109,12 +106,21 @@
         <p class="title">Our Clients</p>
 
         <div class="clientIcons">
-            <img src="/images/client1.png" style="width: 6.988vw;" alt="clientIcon">
-            <img src="/images/client2.png" style="width: 9.673vw;" alt="clientIcon">
-            <img src="/images/client3.png" style="width: 6.956vw;" alt="clientIcon">
-            <img src="/images/client4.png" style="width: 3.541vw;" alt="clientIcon">
-            <img src="/images/client5.png" style="width: 6.699vw;" alt="clientIcon">
+            <img class="clientImage fade" src="/images/client1.png" alt="clientIcon">
+            <img class="clientImage fade" src="/images/client2.png" alt="clientIcon">
+            <img class="clientImage fade" src="/images/client3.png" alt="clientIcon">
+            <img class="clientImage fade" src="/images/client4.png" alt="clientIcon">
+            <img class="clientImage fade" src="/images/client5.png" alt="clientIcon">
         </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
     </div>
 
     <div class="content">
@@ -124,24 +130,71 @@
         <div class="customerReview">
     
             <div class="reviewImages">
-                <img src="/images/Picture1.jpg" alt="revImg">
-                <img src="/images/Picture1.jpg" alt="revImg">
-                <img src="/images/Picture1.jpg" alt="revImg">
-                <img src="/images/Picture1.jpg" alt="revImg">
-                <img src="/images/Picture1.jpg" alt="revImg">
+                <img class="img-review" src="/images/Picture1.jpg" alt="revImg">
+                <img class="img-review" src="/images/Picture1.jpg" alt="revImg">
+                <img class="img-review" src="/images/Picture1.jpg" alt="revImg">
+                <img class="img-review" src="/images/Picture1.jpg" alt="revImg">
+                <img class="img-review" id="lastImage" src="/images/Picture1.jpg" alt="revImg">
             </div>
     
-            <div class="reviewWriteUp">
-                
-                <pre>“</pre>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ante erat quam hac egestas dignissim. Semper cursus metus condimentum.
-                </p>
-                <pre>’’</pre>
-    
-                <p class="reviewerName">Bolade Tejuosho</p>
-                <p class="reviewerPosition">C.EO Iya alaje</p>            
+            <div class="reviewWriteUps">
+                <div class="reviewWriteUp" style="display: none;">
+
+                    <pre>“</pre>
+                    <p>
+                        Your services are so great, I love how you pay attention to details.
+                    </p>
+                    <pre>’’</pre>
+
+                    <p class="reviewerName">Fubara Jennifer</p>
+                    <p class="reviewerPosition">C.E.O. Jeni Beautician</p>
+                </div>
+                <div class="reviewWriteUp" style="display:none">
+
+                    <pre>“</pre>
+                    <p>
+                        My name is Ibinabo
+                    </p>
+                    <pre>’’</pre>
+
+                    <p class="reviewerName">Bille Ibinabo</p>
+                    <p class="reviewerPosition">C.E.O. Nabo Enterprise</p>
+                </div>
+                <div class="reviewWriteUp" style="display:none">
+
+                    <pre>“</pre>
+                    <p>
+                        My name is Jennifer
+                    </p>
+                    <pre>’’</pre>
+
+                    <p class="reviewerName">Bolade Tejuosho</p>
+                    <p class="reviewerPosition">C.EO Iya alaje</p>
+                </div>
+                <div class="reviewWriteUp" style="display:none">
+
+                    <pre>“</pre>
+                    <p>
+                        My name is Walson
+                    </p>
+                    <pre>’’</pre>
+
+                    <p class="reviewerName">Bolade Tejuosho</p>
+                    <p class="reviewerPosition">C.EO Iya alaje</p>
+                </div>
+                <div class="reviewWriteUp">
+
+                    <pre>“</pre>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ante erat quam hac egestas dignissim. Semper cursus metus condimentum
+                    </p>
+                    <pre>’’</pre>
+
+                    <p class="reviewerName">Asimiea Nicholas</p>
+                    <p class="reviewerPosition">C.E.O. Blink Incs.</p>
+                </div>
             </div>
+            
         </div>
 
     </div>
@@ -156,11 +209,11 @@
             </form>
 
             <div class="reachOutLinks">
-                <a href="#"><i class="fab fa-instagram-square"></i></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/p/CPp_unolMop/?utm_medium=copy_link"><i class="fab fa-instagram-square"></i></i></a>
+                <a href="https://twitter.com/mak_artistry/status/1406933417858682882?s=21"><i class="fab fa-twitter-square"></i></a>
                 <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="http://linkedin.com/in/mosopefoluwa-kara-b438b5127"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/108144030778915/posts/160544135538904/?d=n"><i class="fab fa-facebook-square"></i></a>
             </div>
             
         </div>
